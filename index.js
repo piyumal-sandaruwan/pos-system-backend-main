@@ -5,7 +5,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
+///////this is testing commit
 const app = express();
 
 // Server configuration
@@ -50,7 +50,7 @@ app.use((req, resp) => {
 
 // Centralized error handler
 app.use((err, req, resp, next) => {
-    console.error('Unhandled Error:', err);
+    console.error('Unhandled Errorrr:', err);
 
     if (resp.headersSent) {
         return next(err);
